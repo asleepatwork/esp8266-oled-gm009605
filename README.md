@@ -8,7 +8,7 @@ Get a 128x64 OLED Module working with a clone of the WeMos D1 Mini.
  <li>WeMoS D1 Mini Clone (purchase on Aliexpress marked as "Mini ESP8266")<BR><img src="./resources/MiniESP8266-Front.jpg" width="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./resources/MiniESP8266-Back.jpg" width="200"><br><i><b>Note:</b> The "SCK" Pin maps to I2C "SCL"<br><br></i>
 <li>OLED Module (purchase on Aliexpress marked as "GM009605")
 <BR><img src="https://github.com/asleepatwork/esp8266-oled-gm009605/raw/master/resources/OLED128x64-GM009605-Front.jpg" width="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./resources/OLED128x64-GM009605-Back.jpg" width="200"><br><b>Note:</b> <i>The "SCK" Pin maps to I2C "SCL"</i><i>The "SCK" Pin maps to I2C "SCL"<br><br></i>
-<li>2x 10k Ohm 5% Resistors as Pull Up</li></ul>
+<li>2x 10k Ohm 5% Resistors as Pull Up<br><img src="./resources/RES10K_MED.jpg" width="200"></li></ul>
 
 Basic useful feature list:
 
