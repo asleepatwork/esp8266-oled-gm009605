@@ -33,8 +33,11 @@ Get a 128x64 OLED I<sup>2</sup>C Module working with a clone of the WeMos D1 Min
 <ol>
   <li>Navigate to where the Adafruit_SSD1306.h (On Windows 10: C:\Users\[username]\Documents\Arduino\libraries)</li>
   <li>Locate the following code and update as outlined to avoid the Arduino IDE error &quot;#error("Height incorrect, please fix Adafruit_SSD1306.h!")&quot;;<BR><BR>
-    <code>//#define SSD1306_128_64<BR>#define SSD1306_128_32<BR>// #define SSD1306_96_16</code><<BR><BR>to:<BR><BR>
-<code>#define SSD1306_128_64<BR>//#define SSD1306_128_32<BR>// #define SSD1306_96_16</code><BR><BR></li>
+    <code>//#define SSD1306_128_64<br>
+    #define SSD1306_128_32<br>
+    // #define SSD1306_96_16</code><BR>
+    <BR>to:<BR><BR>
+<code>#define SSD1306_128_64<br>//#define SSD1306_128_32<br>// #define SSD1306_96_16</code><BR><BR></li>
   <li>Save and close the Adafruit_SSD1306.h file<br>
   </li>
 </ol>
