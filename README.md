@@ -5,7 +5,7 @@ Get a 128x64 OLED Module working with a clone of the WeMos D1 Mini.
 
 Parts:
 * WeMoS D1 Mini Clone purchase on Aliexpress (marked as "Mini ESP8266")
-![WeMos Mini Clone - Front](./resources/OLED128x64-GM009605-Front.jpg =100x)
+![WeMos Mini Clone - Front](./resources/OLED128x64-GM009605-Front.jpg)
 * 
 
 Basic useful feature list:
