@@ -14,8 +14,7 @@ Get a 128x64 OLED I<sup>2</sup>C Module working with a clone of the WeMos D1 Min
 
 <p><img src="resources/OLED_128x64_i2c Breadboard View.png" width="600"></p>
 <h2>Important Note Regarding Pin Definitions between ESP8266 and the Arduino IDE</h2>
-<p>The ESP2866 doesn't actually have any hardware I<sup>2</sup>C pins – those labeled on the Thing are the default, but you can actually use any two pins as SDA and SCL. <br>
-        Calling <code>Wire.begin()</code>
+<p>The ESP2866 doesn't actually have any hardware I<sup>2</sup>C pins – those labeled on the Thing are the default, but you can actually use any two pins as SDA and SCL. Calling <code>Wire.begin()</code>
         will assume pins 2 and 14 are SDA and SCL, but you can manually set them to any other pin by calling
         <code>Wire.begin([SDA], [SCL])</code>.<br>
 (<em>ref: Sparkfun: "<a href="https://learn.sparkfun.com/tutorials/esp8266-thing-hookup-guide/using-the-arduino-addon" target="_parent">Libraries Available/Not Available and the Differences</a>"</em>) </p>
