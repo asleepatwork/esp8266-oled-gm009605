@@ -1,13 +1,13 @@
 # ESP8266 - 128x64 OLED Wiring
 
-## Aim:
+## Aim
 Get a 128x64 OLED Module working with a clone of the WeMos D1 Mini.
 
-Parts:
-* WeMoS D1 Mini Clone purchase on Aliexpress (marked as "Mini ESP8266")
-![WeMos Mini Clone - Front](/resources/OLED128x64-GM009605-Front.jpg)
-<img src="./resources/OLED128x64-GM009605-Front.jpg" width="100">
-* 
+**Parts**
+* WeMoS D1 Mini Clone (purchase on Aliexpress marked as "Mini ESP8266")<BR><img src="https://github.com/asleepatwork/esp8266-oled-gm009605/raw/master/resources/MiniESP8266-Front.jpg" width="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/asleepatwork/esp8266-oled-gm009605/raw/master/resources/MiniESP8266-Back.jpg" width="200"><br>**Note:** The "SCK" Pin maps to I2C "SCL"
+* OLED Module (purchase on Aliexpress marked as "GM009605")
+<BR><img src="https://github.com/asleepatwork/esp8266-oled-gm009605/raw/master/resources/OLED128x64-GM009605-Front.jpg" width="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/asleepatwork/esp8266-oled-gm009605/raw/master/resources/OLED128x64-GM009605-Back.jpg" width="200"><br>**Note:** The "SCK" Pin maps to I2C "SCL"
+* 2x 10k Ohm 5%
 
 Basic useful feature list:
 
@@ -16,7 +16,7 @@ Basic useful feature list:
  * Drag and drop a file into here to load it
  * File contents are saved in the URL so you can share files
 
-![Board](https://github.com/asleepatwork/esp8266-oled-gm009605/raw/master/resources/OLED_128x64_i2c%20Breadboard%20View.png)
+![Board](https://github.com/asleepatwork/esp8266-oled-gm009605/raw/master/resources/OLED_128x64_i2c%20Breadboard%20View1.png)
 
 
 I'm no good at writing sample / filler text, so go write something yourself.
