@@ -1,9 +1,9 @@
-<i><i></i></i># ESP8266 - 128x64 OLED Wiring
+<h1>ESP8266 - 128x64 OLED Wiring</h1>
 
-## Aim
+<h2>Aim</h2>
 Get a 128x64 OLED Module working with a clone of the WeMos D1 Mini.
 
-**Parts**
+<h2>Parts</h2>
 <ul>
  <li>WeMoS D1 Mini Clone (purchase on Aliexpress marked as "Mini ESP8266")<BR><img src="./resources/MiniESP8266-Front.jpg" width="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./resources/MiniESP8266-Back.jpg" width="200"><br><i><b>Note:</b> The "SCK" Pin maps to I2C "SCL"<br><br></i>
 <li>OLED Module (purchase on Aliexpress marked as "GM009605")
