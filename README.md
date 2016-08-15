@@ -16,7 +16,7 @@ Basic useful feature list:
  * Drag and drop a file into here to load it
  * File contents are saved in the URL so you can share files
 
-![Board](https://github.com/asleepatwork/esp8266-oled-gm009605/raw/master/resources/OLED_128x64_i2c%20Breadboard%20View.png)
+![Board](https://github.com/asleepatwork/esp8266-oled-gm009605/raw/master/resources/OLED_128x64_i2c%20Breadboard%20View1.png)
 
 
 I'm no good at writing sample / filler text, so go write something yourself.
