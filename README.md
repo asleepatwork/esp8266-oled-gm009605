@@ -4,9 +4,9 @@
 Get a 128x64 OLED Module working with a clone of the WeMos D1 Mini.
 
 **Parts**
-* WeMoS D1 Mini Clone (purchase on Aliexpress marked as "Mini ESP8266")<BR><img src="https://github.com/asleepatwork/esp8266-oled-gm009605/raw/master/resources/MiniESP8266-Front.jpg" width="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/asleepatwork/esp8266-oled-gm009605/raw/master/resources/MiniESP8266-Back.jpg" width="200"><br>**Note:** The "SCK" Pin maps to I2C "SCL"
+* WeMoS D1 Mini Clone (purchase on Aliexpress marked as "Mini ESP8266")<BR><img src="./resources/MiniESP8266-Front.jpg" width="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./resources/MiniESP8266-Back.jpg" width="200"><br>**Note:** The "SCK" Pin maps to I2C "SCL"
 * OLED Module (purchase on Aliexpress marked as "GM009605")
-<BR><img src="https://github.com/asleepatwork/esp8266-oled-gm009605/raw/master/resources/OLED128x64-GM009605-Front.jpg" width="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/asleepatwork/esp8266-oled-gm009605/raw/master/resources/OLED128x64-GM009605-Back.jpg" width="200"><br>**Note:** The "SCK" Pin maps to I2C "SCL"
+<BR><img src="https://github.com/asleepatwork/esp8266-oled-gm009605/raw/master/resources/OLED128x64-GM009605-Front.jpg" width="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./resources/OLED128x64-GM009605-Back.jpg" width="200"><br>**Note:** The "SCK" Pin maps to I2C "SCL"
 * 2x 10k Ohm 5% Resistors as Pull Up
 
 Basic useful feature list:
