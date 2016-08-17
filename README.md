@@ -38,7 +38,7 @@ Get a 128x64 OLED I<sup>2</sup>C Module working with a clone of the WeMos D1 Min
     #define SSD1306_128_32
     // #define SSD1306_96_16
     ```
-to
+to:
 
     ```c
     #define SSD1306_128_64
@@ -48,30 +48,42 @@ to
 3. Save and close the Adafruit_SSD1306.h file
 
 <H2>Arduino IDE Code</H2>
-<ol>
-  <li>  Within the Arduino IDE, load the ssd1306_128x64_i2c.ino example sketch from under File | Examples | Examples from Libraries | Adafruit SSD1306</li>
-  <li>Update the code snippet as follows;<br><br>
-  <code>#if (SSD1306_LCDHEIGHT != 64)</code><br>
-  <code>#error("Height incorrect, please fix Adafruit_SSD1306.h!");</code><br>
-  <code>#endif</code>
-  <br>to:<br>
-  <code>#define SSD1306_LCDHEIGHT 64</code><br>
-  <code>#if (SSD1306_LCDHEIGHT != 64)</code><br>
-  <code>#error("Height incorrect, please fix Adafruit_SSD1306.h!");</code><br>
-  <code>#endif</code><br><br>
-  </li>
-  <li>Update the code snippet as follows;
-    <br>
-    <br><code>Wire.begin();</code><br>
-    <code>Serial.begin(9600);</code><br>
-    to:<br>
-    <code>Wire.begin(D1,D3); // sda, scl</code><br>             
-    <code>Serial.begin(57600);</code><br><br>
-  </li>
-  <li>Update the code snippet as follows;<br>
-    <br>
-    <code>display.begin(SSD1306_SWITCHCAPVCC, 0x3D);  // initialize with the I2C addr 0x3D (for the 128x64)</code><br>
-    to:<br>
-    <code>display.begin(SSD1306_SWITCHCAPVCC, 0x3C);  // initialize with the I2C addr 0x3D (for the 128x64)</code>
-  </li>
-</ol>
+1. Within the Arduino IDE, load the ssd1306_128x64_i2c.ino example sketch from under File | Examples | Examples from Libraries | Adafruit SSD1306
+2. Update the code snippet as follows;
+
+    ```c 
+    #if (SSD1306_LCDHEIGHT != 64)
+    #error("Height incorrect, please fix Adafruit_SSD1306.h!");
+    #endif
+	```
+to:
+
+    ```c 
+    #define SSD1306_LCDHEIGHT 64
+    #if (SSD1306_LCDHEIGHT != 64)
+    #error("Height incorrect, please fix Adafruit_SSD1306.h!");
+    #endif
+	```
+  
+3. Update the code snippet as follows;
+
+    ```c 
+    Wire.begin();
+    Serial.begin(9600);
+	```
+to:
+
+    ```c 
+	Wire.begin(D1,D3); // sda, scl             
+    Serial.begin(57600);
+	```
+4. Update the code snippet as follows;
+    
+    ```c 
+	display.begin(SSD1306_SWITCHCAPVCC, 0x3D);  // initialize with the I2C addr 0x3D (for the 128x64)
+	```
+to:
+    
+    ```c 
+	display.begin(SSD1306_SWITCHCAPVCC, 0x3C);  // initialize with the I2C addr 0x3D (for the 128x64)
+	```
