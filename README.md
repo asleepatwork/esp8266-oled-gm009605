@@ -35,7 +35,7 @@ Get a 128x64 OLED I<sup>2</sup>C Module working with a clone of the WeMos D1 Min
     <code>//#define SSD1306_128_64</code><br>
     <code>#define SSD1306_128_32</code><br>
     <code>// #define SSD1306_96_16</code><br>
-    <BR>to:<BR><BR>
+    <br>to:<br>
     <code>#define SSD1306_128_64</code><br>
     <code>//#define SSD1306_128_32</code><br>
     <code>// #define SSD1306_96_16</code><BR><BR></li>
@@ -49,7 +49,7 @@ Get a 128x64 OLED I<sup>2</sup>C Module working with a clone of the WeMos D1 Min
   <code>#if (SSD1306_LCDHEIGHT != 64)</code><br>
   <code>#error("Height incorrect, please fix Adafruit_SSD1306.h!");</code><br>
   <code>#endif</code>
-  <br><br>to:<br><br>
+  <br>to:<br>
   <code>#define SSD1306_LCDHEIGHT 64</code><br>
   <code>#if (SSD1306_LCDHEIGHT != 64)</code><br><br>
   <code>#error("Height incorrect, please fix Adafruit_SSD1306.h!");</code><br>
@@ -58,9 +58,8 @@ Get a 128x64 OLED I<sup>2</sup>C Module working with a clone of the WeMos D1 Min
   <li>Update the code snippet as follows;
     <br>
     <br><code>Wire.begin();</code><br>
-    <code>Serial.begin(9600);</code><br><br>
+    <code>Serial.begin(9600);</code><br>
     to:<br>
-    <br>
     <code>Wire.begin(D1,D3); // sda, scl</code><br>             
     <code>Serial.begin(57600);</code><br><br>
   </li>
@@ -72,4 +71,3 @@ Get a 128x64 OLED I<sup>2</sup>C Module working with a clone of the WeMos D1 Min
     <br>
     <code>display.begin(SSD1306_SWITCHCAPVCC, 0x3C);  // initialize with the I2C addr 0x3D (for the 128x64)</code></li>
 </ol>
-<p>&nbsp;</p>
