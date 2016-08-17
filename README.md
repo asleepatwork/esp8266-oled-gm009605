@@ -29,23 +29,22 @@ Get a 128x64 OLED I<sup>2</sup>C Module working with a clone of the WeMos D1 Min
   </li>
 </ul>
 <h3>Manual Update/ Patching </h3>
-<ol>
-  <li>Navigate to where the Adafruit_SSD1306.h (On Windows 10: C:\Users\[username]\Documents\Arduino\libraries)</li>
-  <li>Locate the following code and update as outlined to avoid the Arduino IDE error &quot;#error("Height incorrect, please fix Adafruit_SSD1306.h!")&quot;;<BR><BR>
+
+  1. Navigate to where the Adafruit_SSD1306.h (On Windows 10: C:\Users\[username]\Documents\Arduino\libraries)
+  2. Locate the following code and update as outlined to avoid the Arduino IDE error &quot;#error("Height incorrect, please fix Adafruit_SSD1306.h!")&quot;;<BR><BR>
 ```c
 //#define SSD1306_128_64
 #define SSD1306_128_32
 // #define SSD1306_96_16
 ```
-    <br>to:<br>
+    to
     ```c
-    <code>#define SSD1306_128_64</code><br>
-    <code>//#define SSD1306_128_32</code><br>
-    <code>// #define SSD1306_96_16</code><BR><BR>
-    ```</li>
-  <li>Save and close the Adafruit_SSD1306.h file<br>
-  </li>
-</ol>
+    #define SSD1306_128_64
+    //#define SSD1306_128_32
+    // #define SSD1306_96_16
+    ```
+  3. Save and close the Adafruit_SSD1306.h file
+
 <H2>Arduino IDE Code</H2>
 <ol>
   <li>  Within the Arduino IDE, load the ssd1306_128x64_i2c.ino example sketch from under File | Examples | Examples from Libraries | Adafruit SSD1306</li>
