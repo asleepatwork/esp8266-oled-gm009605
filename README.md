@@ -1,5 +1,9 @@
 <h1>ESP8266 - 128x64 OLED Wiring</h1>
-
+```c
+	//#define SSD1306_128_64
+    #define SSD1306_128_32
+    // #define SSD1306_96_16
+	```
 <h2>Aim</h2>
 Get a 128x64 OLED I<sup>2</sup>C Module working with a clone of the WeMos D1 Mini. Reuse the Adafruit SSD1306 library to run the demo visualisation.
 <h2>Parts</h2>
@@ -33,10 +37,10 @@ Get a 128x64 OLED I<sup>2</sup>C Module working with a clone of the WeMos D1 Min
   <li>Navigate to where the Adafruit_SSD1306.h (On Windows 10: C:\Users\[username]\Documents\Arduino\libraries)</li>
   <li>Locate the following code and update as outlined to avoid the Arduino IDE error &quot;#error("Height incorrect, please fix Adafruit_SSD1306.h!")&quot;;<BR><BR>
     
-    ```ruby
-	//#define SSD1306_128_64<br>
-    #define SSD1306_128_32<br>
-    // #define SSD1306_96_16<br>
+    ```c
+	//#define SSD1306_128_64
+    #define SSD1306_128_32
+    // #define SSD1306_96_16
 	```
     <br>to:<br>
     ```c
