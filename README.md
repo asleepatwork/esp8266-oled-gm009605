@@ -33,14 +33,14 @@ Get a 128x64 OLED I<sup>2</sup>C Module working with a clone of the WeMos D1 Min
 1. Navigate to where the Adafruit_SSD1306.h (On Windows 10: C:\Users\[username]\Documents\Arduino\libraries)
 2. Locate the following code and update as outlined to avoid the Arduino IDE error &quot;#error("Height incorrect, please fix Adafruit_SSD1306.h!")&quot;;
 
-    ```arduino
+    ```Arduino
     //#define SSD1306_128_64
     #define SSD1306_128_32
     // #define SSD1306_96_16
     ```
 to:
 
-    ```arduino
+    ```Arduino
     #define SSD1306_128_64
     //#define SSD1306_128_32
     // #define SSD1306_96_16
@@ -51,14 +51,14 @@ to:
 1. Within the Arduino IDE, load the ssd1306_128x64_i2c.ino example sketch from under File | Examples | Examples from Libraries | Adafruit SSD1306
 2. Update the code snippet as follows;
 
-    ```arduino 
+    ```Arduino 
     #if (SSD1306_LCDHEIGHT != 64)
     #error("Height incorrect, please fix Adafruit_SSD1306.h!");
     #endif
 	```
 to:
 
-    ```arduino 
+    ```Arduino 
     #define SSD1306_LCDHEIGHT 64
     #if (SSD1306_LCDHEIGHT != 64)
     #error("Height incorrect, please fix Adafruit_SSD1306.h!");
@@ -67,23 +67,23 @@ to:
   
 3. Update the code snippet as follows;
 
-    ```arduino 
+    ```Arduino 
     Wire.begin();
     Serial.begin(9600);
 	```
 to:
 
-    ```arduino 
+    ```Arduino 
 	Wire.begin(D1,D3); // sda, scl             
     Serial.begin(57600);
 	```
 4. Update the code snippet as follows;
     
-    ```arduino 
+    ```Arduino 
 	display.begin(SSD1306_SWITCHCAPVCC, 0x3D);  // initialize with the I2C addr 0x3D (for the 128x64)
 	```
 to:
     
-    ```arduino 
+    ```Arduino 
 	display.begin(SSD1306_SWITCHCAPVCC, 0x3C);  // initialize with the I2C addr 0x3D (for the 128x64)
 	```
