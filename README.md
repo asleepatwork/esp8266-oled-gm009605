@@ -74,8 +74,8 @@ to:
 to:
 
     ```C++ 
-	Wire.begin(D1,D3); // sda, scl             
-    Serial.begin(57600);
+	Wire.begin(**D1,D3**); // sda, scl             
+    Serial.begin(**57600**);
 	```
 4. Update the code snippet as follows;
     
@@ -85,5 +85,5 @@ to:
 to:
     
     ```C++ 
-	display.begin(SSD1306_SWITCHCAPVCC, 0x3C);  // initialize with the I2C addr 0x3D (for the 128x64)
+	display.begin(SSD1306_SWITCHCAPVCC, **0x3C**);  // initialize with the I2C addr **0x3C** (for the 128x64)
 	```
