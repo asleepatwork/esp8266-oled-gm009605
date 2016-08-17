@@ -45,8 +45,8 @@ Get a 128x64 OLED I<sup>2</sup>C Module working with a clone of the WeMos D1 Min
 <H2>Arduino IDE Code</H2>
 <ol>
   <li>  Within the Arduino IDE, load the ssd1306_128x64_i2c.ino example sketch from under File | Examples | Examples from Libraries | Adafruit SSD1306</li>
-  <li>Update the code snippet as follows;<br><br><code>#if (SSD1306_LCDHEIGHT != 64)<br>#error("Height incorrect, please fix Adafruit_SSD1306.h!");<br>#endif</code>
-  <br><br>to:<br><br><code>#define SSD1306_LCDHEIGHT 64<BR>#if (SSD1306_LCDHEIGHT != 64)<br>#error("Height incorrect, please fix Adafruit_SSD1306.h!");<br>#endif<br><br></code>
+  <li>Update the code snippet as follows;<br><br><code>#if (SSD1306_LCDHEIGHT != 64)<br></code><code>#error("Height incorrect, please fix Adafruit_SSD1306.h!");<br></code><code>#endif</code>
+  <br><br>to:<br><br><code>#define SSD1306_LCDHEIGHT 64<BR></code><code>#if (SSD1306_LCDHEIGHT != 64)<br></code><code>#error("Height incorrect, please fix Adafruit_SSD1306.h!");<br><code>#endif<br><br></code>
   </li>
   <li>Update the code snippet as follows;<br>
     <br>
