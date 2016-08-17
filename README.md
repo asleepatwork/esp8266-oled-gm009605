@@ -51,7 +51,7 @@ Get a 128x64 OLED I<sup>2</sup>C Module working with a clone of the WeMos D1 Min
   <code>#endif</code>
   <br>to:<br>
   <code>#define SSD1306_LCDHEIGHT 64</code><br>
-  <code>#if (SSD1306_LCDHEIGHT != 64)</code><br><br>
+  <code>#if (SSD1306_LCDHEIGHT != 64)</code><br>
   <code>#error("Height incorrect, please fix Adafruit_SSD1306.h!");</code><br>
   <code>#endif</code><br><br>
   </li>
@@ -65,9 +65,7 @@ Get a 128x64 OLED I<sup>2</sup>C Module working with a clone of the WeMos D1 Min
   </li>
   <li>Update the code snippet as follows;<br>
     <br>
-    <code>display.begin(SSD1306_SWITCHCAPVCC, 0x3D);  // initialize with the I2C addr 0x3D (for the 128x64)</code> <br>
-    <br>
+    <code>display.begin(SSD1306_SWITCHCAPVCC, 0x3D);  // initialize with the I2C addr 0x3D (for the 128x64)</code><br>
     to:<br>
-    <br>
     <code>display.begin(SSD1306_SWITCHCAPVCC, 0x3C);  // initialize with the I2C addr 0x3D (for the 128x64)</code></li>
 </ol>
