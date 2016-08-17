@@ -57,12 +57,11 @@ Get a 128x64 OLED I<sup>2</sup>C Module working with a clone of the WeMos D1 Min
   </li>
   <li>Update the code snippet as follows;<br><br>
     <code>Wire.begin();</code><br>
-    <code>Serial.begin(9600);</code><br>
-    <br>
+    <code>Serial.begin(9600);</code><br><br>
     to:<br>
     <br>
     <code>Wire.begin(D1,D3); // sda, scl</code><br>             
-  <code>Serial.begin(57600);</code><BR><BR></li>
+    <code>Serial.begin(57600);</code><br><br></li>
   <li>Update the code snippet as follows;<br>
     <br>
     <code>display.begin(SSD1306_SWITCHCAPVCC, 0x3D);  // initialize with the I2C addr 0x3D (for the 128x64)</code> <br>
