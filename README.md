@@ -74,8 +74,8 @@ to:
 to:
 
     ```C++ 
-	Wire.begin(**D1,D3**); // sda, scl             
-    Serial.begin(**57600**);
+	Wire.begin(D1,D3); // sda, scl             
+    Serial.begin(57600);
 	```
 4. Update the code snippet as follows to change the address for the OLED display from **0x3D** to **0x3C**;
     
