@@ -32,13 +32,17 @@ Get a 128x64 OLED I<sup>2</sup>C Module working with a clone of the WeMos D1 Min
 <ol>
   <li>Navigate to where the Adafruit_SSD1306.h (On Windows 10: C:\Users\[username]\Documents\Arduino\libraries)</li>
   <li>Locate the following code and update as outlined to avoid the Arduino IDE error &quot;#error("Height incorrect, please fix Adafruit_SSD1306.h!")&quot;;<BR><BR>
+    '''C
     <code>//#define SSD1306_128_64</code><br>
     <code>#define SSD1306_128_32</code><br>
     <code>// #define SSD1306_96_16</code><br>
+    '''
     <br>to:<br>
+    '''C
     <code>#define SSD1306_128_64</code><br>
     <code>//#define SSD1306_128_32</code><br>
-    <code>// #define SSD1306_96_16</code><BR><BR></li>
+    <code>// #define SSD1306_96_16</code><BR><BR>
+    '''</li>
   <li>Save and close the Adafruit_SSD1306.h file<br>
   </li>
 </ol>
@@ -67,5 +71,6 @@ Get a 128x64 OLED I<sup>2</sup>C Module working with a clone of the WeMos D1 Min
     <br>
     <code>display.begin(SSD1306_SWITCHCAPVCC, 0x3D);  // initialize with the I2C addr 0x3D (for the 128x64)</code><br>
     to:<br>
-    <code>display.begin(SSD1306_SWITCHCAPVCC, 0x3C);  // initialize with the I2C addr 0x3D (for the 128x64)</code></li>
+    <code>display.begin(SSD1306_SWITCHCAPVCC, 0x3C);  // initialize with the I2C addr 0x3D (for the 128x64)</code>
+  </li>
 </ol>
