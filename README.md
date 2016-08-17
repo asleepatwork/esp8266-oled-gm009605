@@ -36,8 +36,7 @@ Get a 128x64 OLED I<sup>2</sup>C Module working with a clone of the WeMos D1 Min
 //#define SSD1306_128_64
 #define SSD1306_128_32
 // #define SSD1306_96_16
-```
-  to
+```to
 ```c
 #define SSD1306_128_64
 //#define SSD1306_128_32
